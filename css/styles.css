@@ -6,12 +6,23 @@
 }
 
 .body {
+  max-width: 1200px;
   padding: 2rem 4rem;
   margin: 0;
   background-color: #f3f4f6;
   border-bottom: 5px solid red;
   font-size: 1.5rem;
+  color: #1f2937;
 }
+
+/* .main-container {
+  border: red 2px solid;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+} */
 
 .navigation-list {
   list-style: none;
@@ -34,9 +45,24 @@
 }
 
 .main-heading {
-  color: #4338ca;
-  font-size: 48px;
+  background: linear-gradient(
+    90deg,
+    rgba(67, 56, 202, 1) 0%,
+    rgba(34, 211, 238, 1) 35%,
+    rgba(255, 0, 0, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: 62px;
   margin: 2rem 0;
+}
+
+.intro-paragraph {
+  max-width: 70%;
+}
+
+.about-me-paragraph {
+  max-width: 75%;
 }
 
 h2 {
@@ -65,14 +91,14 @@ p {
   margin-left: 25px;
 }
 .technology-list li:last-of-type {
-  color: red;
+  color: #3730a3;
 }
 .food-list {
   margin-left: 20px;
 }
 
 .food-list > li:nth-child(even) {
-  color: #ef4444;
+  color: #3730a3;
 }
 .footer-list {
   margin: 2rem 0;
@@ -85,7 +111,7 @@ p {
 }
 
 .footer-list li {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #ff0000;
 }
 .footer-list li:hover {
   border-bottom: none;
@@ -112,6 +138,8 @@ a:hover {
   grid-template-rows: 1fr 1fr;
   gap: 10px;
   border-radius: 15px;
+  border-bottom: #ef4444 solid 2px;
+  border-right: #ef4444 solid 2px;
 }
 
 .grid-images {
@@ -120,17 +148,7 @@ a:hover {
   align-items: center;
   overflow: hidden;
   border-radius: 15px;
-
   padding: 5px;
-}
-
-.grid-images.left {
-  border-left: #ef4444 solid 2px;
-  border-top: #ef4444 solid 2px;
-}
-.grid-images.right {
-  border-right: #ef4444 solid 2px;
-  border-bottom: #ef4444 solid 2px;
 }
 
 .grid-gallery img {
@@ -138,6 +156,11 @@ a:hover {
   width: 100%;
   object-fit: cover;
   border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.grid-gallery img:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 1000px) {
