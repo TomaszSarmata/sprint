@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+  padding: 2rem 4rem;
+  margin: 0;
+  background-color: #f3f4f6;
+  border-bottom: 5px solid red;
+  font-size: 1.5rem;
+}
+
+.navigation-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-list li {
+  border-bottom: 1px solid red;
+}
+
+.navigation-list li:hover {
+  border-bottom: none;
+}
+
+.navigation-list a {
+  text-decoration: none;
+}
+
+.main-heading {
+  color: #4338ca;
+  font-size: 48px;
+  margin: 2rem 0;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-family: monospace;
+}
+
+h3 {
+  margin: 1rem 0;
+  font-family: monospace;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.image {
+  height: 200px;
+  border-radius: 15px;
+  border-left: 2px solid #ef4444;
+  border-top: 2px solid #ef4444;
+  padding: 8px;
+}
+
+.technology-list {
+  margin-left: 25px;
+}
+.technology-list li:last-of-type {
+  color: red;
+}
+.food-list {
+  margin-left: 20px;
+}
+
+.food-list > li:nth-child(even) {
+  color: #ef4444;
+}
+.footer-list {
+  margin: 2rem 0;
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  text-decoration: none;
+}
+
+.footer-list li {
+  border-bottom: 1px solid red;
+}
+.footer-list li:hover {
+  border-bottom: none;
+}
+
+.footer-list a {
+  text-decoration: none;
+}
+
+a {
+  color: #4338ca;
+  font-size: 18px;
+}
+
+a:hover {
+  color: red;
+}
+
+.grid-gallery {
+  margin-top: 2rem;
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  border-radius: 15px;
+}
+
+.grid-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
+
+  padding: 5px;
+}
+
+.grid-images.left {
+  border-left: #ef4444 solid 2px;
+  border-top: #ef4444 solid 2px;
+}
+.grid-images.right {
+  border-right: #ef4444 solid 2px;
+  border-bottom: #ef4444 solid 2px;
+}
+
+.grid-gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media (max-width: 1000px) {
+  .grid-gallery {
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-gallery {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
